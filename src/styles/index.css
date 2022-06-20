@@ -54,6 +54,25 @@ body {
     background-color: var(--color-background);
 }
 
+/* scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey; */
+    background-color: var(--color-background);
+    border-radius: 3px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-dark);
+    border-radius: 3px;
+  }
+
 /*============================== Loading Sign =============================*/
 
 .loadingSign {
@@ -153,10 +172,12 @@ nav a {
 
 .pageActive {
     border-bottom: 0.1rem solid var(--color-dark);
+    transition: border-bottom 300ms ease-in-out;
 }
 
 .pageActive a {
     color: var(--color-warning);
+    transition: color 300ms ease-in-out;
 }
 
 /*================================ Footer ================================*/
@@ -328,7 +349,8 @@ footer {
     /* border-right: 1px solid grey; */
 }
 
-.contactForm form input, .contactForm form textarea {
+.contactForm form input,
+.contactForm form textarea {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,7 +418,7 @@ footer {
     width: 100%;
     height: 2.5rem;
     /* margin: 0 0 0 1rem; */
-    padding: 0 0 0 0.5rem;  
+    padding: 0 0 0 0.5rem;
     color: black;
     border: 1px solid var(--color-dark);
     border-radius: 5px;
@@ -425,7 +447,7 @@ footer {
     /* justify-content: space-between; */
 }
 
-.containerLogin a:hover{
+.containerLogin a:hover {
     color: var(--color-warning);
     transition: color 300ms ease-in-out;
 }
@@ -452,7 +474,7 @@ footer {
     flex-direction: column;
 }
 
-.registerFormContainer form input{
+.registerFormContainer form input {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -514,7 +536,7 @@ footer {
     margin-top: 18rem;
 }
 
-.allContainerRPWD form{
+.allContainerRPWD form {
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -565,4 +587,158 @@ footer {
 .allContainerRPWD a:hover {
     color: var(--color-warning);
     transition: color 300ms ease-in-out;
+}
+
+
+/*================== Shopping Page ==================*/
+
+
+.containerAllShop {
+    display: block;
+    margin-top: 2rem;
+}
+
+/* Categorys */
+
+.izqListShop {
+    display: flex;
+    width: auto;
+    margin: 2rem 0 0 2rem;
+    /* flex-direction: column; */
+}
+
+.izqListShop ul {
+    /* padding: 0 2rem; */
+    /* border: 1px solid rgba(143, 143, 143, 0.377); */
+    border-radius: 5px;
+}
+
+.izqListShop li {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    list-style: none;
+    margin-top: 0.2rem;
+}
+
+.izqListShop p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-warning);
+    padding-bottom: 0.5rem;
+}
+
+.izqListShop a {
+    color: var(--color-dark);
+    padding: 0 0 0 5px;
+}
+
+.activeCategory {
+    color: var(--color-dark);
+    background-color: var(--color-warning);
+    border-radius: 5px;
+    transition: background-color 500ms ease-in-out;
+}
+
+.activeCategory a {
+    color: var(--color-white);
+}
+
+.izqListShop .disabled:hover {
+    color: var(--color-warning);
+    transition: color 300ms ease-in-out;
+}
+
+/*PagesCounter*/
+
+.pagesCounter ul {
+    display: flex;
+    /* width: 100%; */
+    /* background-color: var(--blanquito); */
+    cursor: pointer;
+    /* border-radius: ; */
+}
+
+.pagesCounter li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+    border: 1px solid rgba(143, 143, 143, 0.377);
+    border-radius: 5px;
+    margin: 0 0.1rem;
+}
+
+.pagesActive {
+    background-color: rgba(255, 187, 85, 0.733);
+}
+
+.pagesCounter li:hover {
+    background-color: rgba(255, 187, 85, 0.733);
+    transition: background-color 300ms ease-in-out;
+}
+
+.pagesCounter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
+/*================== Shopping Cards ==================*/
+
+.ListShop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 2rem 0 0 7rem;
+    width: 80%;
+}
+
+.containerCatCards {
+    display: flex;
+}
+
+.cardShop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 20rem;
+    padding: 0 1rem;
+    height: auto;
+    /* background-color: red; */
+    border: 1px solid rgba(255, 187, 85, 0.192);
+    /* box-shadow: var(--box-shadow); */
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.cardShop:hover {
+    background-color: rgba(255, 187, 85, 0.733);
+    transition: background-color 500ms ease-in-out;
+}
+
+.cardShop img {
+    margin: 2rem 0 0 0;
+}
+
+.cardShopInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cardShopInfo h1 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.priceProduct {
+    color: green;
 }

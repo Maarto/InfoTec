@@ -12,23 +12,23 @@ function Footer() {
                 <div className="containerInfo">
                     <div className="footerCInfo">
                         <div className="textInfoF">
-                            <h1>Contáctate</h1>
+                            <h1>Contactate</h1>
                         </div>
                         <div className="contenedorInformacion">
                             <div className="contInfo">
                                 <div className="intoInfoFooter">
-                                    <FiMail className='footerIcon' />
-                                    <p>ventas@infoteclaplata.com.ar</p>
-                                </div>
-                                <div className="intoInfoFooter">
                                     <BsTelephone className='footerIcon' />
                                     <p>(0221) 446-8020</p>
+                                </div>
+                                <div className="intoInfoFooter">
+                                    <BsWhatsapp className='footerIcon' />
+                                    <p>(0221) 15-5399845 </p>
                                 </div>
                             </div>
                             <div className="contInfo">
                                 <div className="intoInfoFooter">
-                                    <BsWhatsapp className='footerIcon' />
-                                    <p>(0221) 15-5399845 </p>
+                                    <FiMail className='footerIcon' />
+                                    <p>ventas@infoteclaplata.com.ar</p>
                                 </div>
                                 <div className="intoInfoFooter">
                                     <GoLocation className='footerIcon' />
