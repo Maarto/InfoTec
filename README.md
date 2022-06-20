@@ -14,3 +14,5 @@ Una vez clonado / descargado el repositorio procedemos a colocar los siguientes 
 > `npm run start`
 
 Una vez que termina de cargar la página se inicia en la dirección http://localhost:3000
+
+![imagen2](https://i.imgur.com/kJZhXF1_d.webp?maxwidth=760&fidelity=grand)
